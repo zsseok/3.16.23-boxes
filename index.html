@@ -1,0 +1,18 @@
+<script>
+
+
+	function createSlider (e) {
+    const box = document.createElement('input') // <input>
+    box.type = 'checkbox' // <input type="checkbox">
+    document.body.appendChild(box)
+    box.style.position = 'absolute'
+    box.style.left = `${e.x}px`
+    box.style.top = `${e.y}px`
+    console.log(e.y)
+  }
+  
+
+  
+	window.addEventListener('click', createSlider)
+
+</script>
